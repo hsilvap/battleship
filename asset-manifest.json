@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hsilvap/battleship/static/css/main.5f361e03.chunk.css",
-    "main.js": "/hsilvap/battleship/static/js/main.e5119456.chunk.js",
-    "main.js.map": "/hsilvap/battleship/static/js/main.e5119456.chunk.js.map",
-    "runtime-main.js": "/hsilvap/battleship/static/js/runtime-main.cef70070.js",
-    "runtime-main.js.map": "/hsilvap/battleship/static/js/runtime-main.cef70070.js.map",
-    "static/js/2.2d6da82e.chunk.js": "/hsilvap/battleship/static/js/2.2d6da82e.chunk.js",
-    "static/js/2.2d6da82e.chunk.js.map": "/hsilvap/battleship/static/js/2.2d6da82e.chunk.js.map",
-    "index.html": "/hsilvap/battleship/index.html",
-    "precache-manifest.bd069af89539ab479bd014c005e1ce27.js": "/hsilvap/battleship/precache-manifest.bd069af89539ab479bd014c005e1ce27.js",
-    "service-worker.js": "/hsilvap/battleship/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/hsilvap/battleship/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.2d6da82e.chunk.js.LICENSE.txt": "/hsilvap/battleship/static/js/2.2d6da82e.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/hsilvap/battleship/static/media/logo.5d5d9eef.svg"
+    "main.css": "/battleship/static/css/main.5f361e03.chunk.css",
+    "main.js": "/battleship/static/js/main.fa658ba4.chunk.js",
+    "main.js.map": "/battleship/static/js/main.fa658ba4.chunk.js.map",
+    "runtime-main.js": "/battleship/static/js/runtime-main.9e463cc9.js",
+    "runtime-main.js.map": "/battleship/static/js/runtime-main.9e463cc9.js.map",
+    "static/js/2.d5f56a86.chunk.js": "/battleship/static/js/2.d5f56a86.chunk.js",
+    "static/js/2.d5f56a86.chunk.js.map": "/battleship/static/js/2.d5f56a86.chunk.js.map",
+    "index.html": "/battleship/index.html",
+    "precache-manifest.5dc199230b46e16f6832864ba00b8366.js": "/battleship/precache-manifest.5dc199230b46e16f6832864ba00b8366.js",
+    "service-worker.js": "/battleship/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/battleship/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d5f56a86.chunk.js.LICENSE.txt": "/battleship/static/js/2.d5f56a86.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/battleship/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cef70070.js",
-    "static/js/2.2d6da82e.chunk.js",
+    "static/js/runtime-main.9e463cc9.js",
+    "static/js/2.d5f56a86.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.e5119456.chunk.js"
+    "static/js/main.fa658ba4.chunk.js"
   ]
 }
