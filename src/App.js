@@ -21,6 +21,13 @@ const PlaygoundWrapper = styled.div`
   } 
 `
 
+const AreaWrapper = styled.div`
+display:flex;
+justify-content:center;
+@media (max-width: 500px){
+  grid-row: 1;  
+} 
+`
 
 function App() {
   const [positions, setpositions] = React.useState([
@@ -59,7 +66,7 @@ function App() {
         <div style={{display:'flex', justifyContent:'center'}}>
           <PlayerArea/>
         </div>
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <AreaWrapper>
           <Grid>
             {gameMap.map((rows, index) => {
                 return rows.map((cell,cellIndex) => {
@@ -67,7 +74,7 @@ function App() {
                 })
             })}
           </Grid>
-        </div>
+        </AreaWrapper>
       </PlaygoundWrapper>
     </AppWrapper>
   );
