@@ -10,12 +10,17 @@ import PlayerArea from './components/PlayerArea';
 const AppWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr;  
+  
 `
 const PlaygoundWrapper = styled.div`
   padding-top: 2em;
   display: grid;
   grid-template-columns: 2fr 3fr;  
+  @media (max-width: 500px){
+    grid-template-columns: 1fr;  
+  } 
 `
+
 
 function App() {
   const [positions, setpositions] = React.useState([
@@ -25,17 +30,25 @@ function App() {
   { "ship": "submarine", "positions": [[3,0], [3,1], [3,2]] },
   { "ship": "destroyer", "positions": [[0,0], [1,0]] }])
   const [gameMap, setGameMap] = React.useState(Array(10).fill().map(()=>Array(10).fill()))
-  const [score, setscore] = React.useState([])
+  const [score, setscore] = React.useState([{"ship": "carrier:", hits:1}])
   const handleClick = (posX,posY) => {
     const current = [...positions]
     const currentGameMap = [...gameMap]
-    current.forEach(x=>{ x.positions.forEach(y=> { 
+    var found = false
+    current.forEach(x=>{
+      x.positions.forEach(y=> { 
+        if(found===true)
+          return
         if (y[0] === posX && y[1] === posY){
-          currentGameMap[posX][posY] = 1
-        }else{
-          currentGameMap[posX][posY] = 0
+          found = true
         }
       })
+      if(found === true){
+        currentGameMap[posX][posY] = 1
+
+      }else{
+        currentGameMap[posX][posY] = 0
+      }
     })
     setGameMap(currentGameMap)
   }
